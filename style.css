@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+.box{
+    display: flex;
+    width: 800px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+.box .leftBox{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/drawers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box .rightBox{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.rightBox h3{
+    color: hsl(217, 19%, 35%);
+    font-weight: 400;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.rightBox p {
+    color: hsl(214, 17%, 51%);
+    line-height: 1.5;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.rightBox .bottonBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.bottonBox .authorBox{
+    display: flex;
+    flex-direction: row;
+}
+.authorBox img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.authorBox .authorText{
+    padding-left: 10px;
+}
+.authorText h4{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+.authorText p{
+    color: hsl(214, 17%, 51%);
+}
+.shareBtn{
+    width: 40px;
+    height: 40px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    border-style: none;
+}
+.shareBtn:hover, .shareBtn.active{
+    color: white;
+    background-color: hsl(214, 17%, 51%);
+}
+.share-option{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 50%;
+    left: 61%;
+}
+.share-option span {
+    color: white;;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.share-option img:hover{
+    transform: scale(1.5);
+}
+.share-option .triangle{
+    width: 20px;
+    height: 20px;
+    border-left:  25px solid transparent;
+    border-right:  25px solid transparent;
+    border-top:  50px solid #555;
+    position: absolute;
+}
+.hidden {
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .box{        
+        flex-direction: column;
+        width: 80%;
+        height: 90%;
+    }
+    .leftBox{
+        width: 100%;
+        height: 20%;
+    }
+    .share-option{        
+        width: 430px;
+        height: 90px;
+        top: 650px;
+        left: 50px;
+    }
+}
